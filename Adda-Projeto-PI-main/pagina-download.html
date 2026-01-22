@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       <meta charset="utf-8">
+       <title>Download</title>
+   </head>
+
+   <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+       
+         header, footer {
+            background-color: rgb(0, 5, 53);
+            height: 50px;
+            width: 100%;
+        }
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0px;
+
+        }
+        #clique {
+            
+             font-size: 30px;
+             color: white;
+        }
+          .cabecalho {
+           display: flex;
+            padding: 0px;
+        }
+
+    #botao-voltar {
+        height: 200px;
+        width: auto;
+        background-color: white;
+        border: none;
+       }
+
+    #voltar {
+        height: 100px;
+        width: auto;
+       }
+        .principal{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+    
+       #pranchetinha{
+        position: relative;
+        width: 500px;
+        top: 65px;
+       }
+
+         
+   </style>
+
+   <body>
+        <header></header>
+        <div class="principal">
+            <div class="content">
+                <button id="cadastro"><img src="img/appstore.jpg" alt="appstore"></button>
+                <img src="img/AddaPNG.png" alt="pranchetinha" id="pranchetinha">
+                <button id="login"><img src="img/googleplay.png" alt="googleplay"></button>
+            </div>
+        </div>
+   </body>
+        <footer></footer>
+</html>

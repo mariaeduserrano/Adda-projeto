@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina professor 1</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(237, 231, 217);
+        }
+        header, footer {
+            background-color: rgb(0, 5, 53);
+            height: 50px;
+            width: 100%;
+        }
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0px;
+        }
+        .voltar {
+            display: flex;
+        }
+        #botao-voltar {
+            height: 100px;
+            width: auto;
+            background-color: white;
+            border: none;
+        }
+        #voltar {
+            height: 100px;
+            width: auto;
+        }
+        #pranchetinha{
+            position: absolute;
+            width:500px;
+            top: 10px;
+            right: 190px;
+          
+        }
+    
+        .principal {
+            display: flex;
+        }
+        .content {
+            display: flex;
+            left: 350px;
+            position: sticky;
+    
+        }
+        .tabela {
+            position: relative;
+            background-color:white;
+            border: 5px solid;
+            border-radius: 30px;
+            border-color: rgb(0, 5, 53);
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+            width: 370px;
+            left: 300px;
+            gap: 33px;
+            margin-top: 5px;
+        }
+
+       #cadastro{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 300px;
+        margin: 18px;
+        padding: 5px;
+        border: none; 
+       }
+
+        input {
+        font-size: 20px;
+        width: 250px;          
+        padding: 10px;        
+        border-radius: 20px;   
+        border: 1px solid #ccc;
+        font-size: 16px; font-size: 20px;
+        width: 250px;          
+        padding: 10px;        
+        border-radius: 20px;   
+        border: 1px solid #ccc;
+        font-size: 16px;
+       }
+
+       #cadastro input:focus{
+        background-color: rgb(209, 209, 209);
+       }
+
+       #cadastrar{
+        position: relative;
+        background-color: aqua;
+        right: 20px;
+        left: 20px;
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
+        margin-top: 270px;
+        border-radius: 15px;
+        border-color: black;
+       }
+       
+    
+    </style>
+
+    <body>
+        <header></header>
+        <div class="principal">
+            <div class="content">
+                <img src="img/AddaPNG.png" alt="pranchetinha" id="pranchetinha">
+                <div class="tabela">
+                    <form id="cadastro">
+                    <input type="text" placeholder="CPF" maxlength="11">
+                    <input type="Text" placeholder="Escola">
+                    <input type="Text" placeholder="Graduação">
+                    <input type="text" placeholder="Área de Conhecimento">
+                    <form id="Senha">
+                        <input type="password" placeholder="Senha">
+                    </form>
+                </div>
+                <a href="pagina-professor1.html"><button id="cadastrar">Cadastrar</button></a>
+                 
+            </div>
+        </div>
+        <footer></footer>
+    </body>
+        <script>
+
+
+        </script>
+</html>
