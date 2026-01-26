@@ -6,11 +6,11 @@
    </head>
 
    <style>
-        body{
+        body {
             margin: 0;
-            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ede7d9;
         }
-       
          header, footer {
             background-color: rgb(0, 5, 53);
             height: 50px;
@@ -24,57 +24,60 @@
         footer{
             position: fixed;
             bottom: 0px;
-
+            z-index: 10;
         }
-        #clique {
-            
-             font-size: 30px;
-             color: white;
+        #sol{
+            width: 20%;
+            position: absolute;
+            right: 20px;
+            top: 50px;
         }
-          .cabecalho {
-           display: flex;
-            padding: 0px;
+        #graminha{
+            width: 100%;
+            position: absolute;
+            bottom: 45px;
         }
-
-    #botao-voltar {
-        height: 200px;
-        width: auto;
-        background-color: white;
-        border: none;
+        #pranchetinha{
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 25px;
+            z-index: 1;
+       }
+       #appstore, #playstore{
+            width: 40%;
+       }
+       @media only screen and (min-width:325px){
+            #pranchetinha{
+            width: 70%;
+            left: 20%;
+            }
        }
 
-    #voltar {
-        height: 100px;
-        width: auto;
-       }
-        .principal{
-            display: flex;
-            flex-grow: 1;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        
-    
-       #pranchetinha{
-        position: relative;
-        width: 500px;
-        top: 65px;
+       @media only screen and (min-width:768px){
+            #pranchetinha{
+            width: 50%;
+            left: 25%;
+            }
        }
 
-         
+       @media only screen and (min-width:1440px){
+            #pranchetinha{
+            width: 38%;
+            left: 30%;
+            }
+       }
    </style>
 
    <body>
         <header></header>
-        <div class="principal">
-            <div class="content">
-                <button id="cadastro"><img src="img/appstore.jpg" alt="appstore"></button>
+            <img src="gifs/solzinho.gif" alt="" id="sol">
+            <div class="button">
+                <button><img src="img/appStore.png" alt="appstore" id="appstore"></button>
+                <button><img src="img/playStore.png" alt="googleplay" id="playstore"></button>
                 <img src="img/AddaPNG.png" alt="pranchetinha" id="pranchetinha">
-                <button id="login"><img src="img/googleplay.png" alt="googleplay"></button>
             </div>
-        </div>
+            <img src="img/graminha.png" alt="grama verde" id="graminha">
    </body>
         <footer></footer>
 </html>
