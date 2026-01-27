@@ -11,6 +11,9 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: #ede7d9;
         }
+        #textoAdda{
+            width: 100px;
+        }
          header, footer {
             background-color: rgb(0, 5, 53);
             height: 50px;
@@ -27,7 +30,7 @@
             z-index: 10;
         }
         #sol{
-            width: 20%;
+            width: 15%;
             position: absolute;
             right: 20px;
             top: 50px;
@@ -37,32 +40,42 @@
             position: absolute;
             bottom: 45px;
         }
-        #pranchetinha{
+         #flores{
+            width: 40%;
+            position: absolute;
+            z-index: 1;
+            bottom: 50px;
+        }
+        #floresDois{
+            width: 40%;
+            position: absolute;
+            right: 10px;
+            z-index: 1;
+            bottom: 50px;
+        }
+        #adda{
             display: block;
             margin: 0 auto;
             position: absolute;
             bottom: 25px;
             z-index: 1;
        }
-       #appstore, #playstore{
-            width: 40%;
-       }
        @media only screen and (min-width:325px){
-            #pranchetinha{
+            #adda{
             width: 70%;
             left: 20%;
             }
        }
 
        @media only screen and (min-width:768px){
-            #pranchetinha{
+            #adda{
             width: 50%;
             left: 25%;
             }
        }
 
        @media only screen and (min-width:1440px){
-            #pranchetinha{
+            #adda{
             width: 38%;
             left: 30%;
             }
@@ -70,14 +83,15 @@
    </style>
 
    <body>
-        <header></header>
+        <header><img src="img/addaTexto.png" alt="tipografia da logo do projeto adda" id="textoAdda"></header>
             <img src="gifs/solzinho.gif" alt="" id="sol">
             <div class="button">
-                <button><img src="img/appStore.png" alt="appstore" id="appstore"></button>
-                <button><img src="img/playStore.png" alt="googleplay" id="playstore"></button>
-                <img src="img/AddaPNG.png" alt="pranchetinha" id="pranchetinha">
+                <img src="img/AddaPNG.png" alt="pranchetinha" id="adda">
             </div>
             <img src="img/graminha.png" alt="grama verde" id="graminha">
+            <img src="gifs/florzinhas.gif" alt="florzinhas na grama lado esquerdo" id="flores">
+            <img src="gifs/florzinhas.gif" alt="florzinhas na grama do lado direito" id="floresDois">
+            <footer></footer>
    </body>
-        <footer></footer>
+
 </html>

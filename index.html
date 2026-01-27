@@ -64,9 +64,12 @@
             border: none; 
             border-radius: 50px;
             z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        }
+        #professor:hover {
+            background-color: rgb(45, 9, 77);
+        }
+        #aluno:hover {
+            background-color: rgb(61, 97, 133);
         }
         #aluno{
             position: absolute;
@@ -75,9 +78,6 @@
             border: none; 
             border-radius: 50px;
             z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         .titulo{
             background-color: rgb(116, 176, 231);
@@ -114,14 +114,21 @@
         }
  
         select{
-             font-size: 20px;
+            font-size: 20px;
             width: 250px;          
             padding: 10px;        
             border-radius: 20px;  
             border: 1px solid #ccc;
             font-size: 16px;
         }
- 
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
         textarea{
              font-size: 20px;
             width: 250px;          
@@ -129,6 +136,10 @@
             border-radius: 20px;  
             border: 1px solid #ccc;
             font-size: 16px;
+        }
+        ::selection{
+            color:rgb(10, 19, 90);
+            background-color: rgb(255, 241, 177);
         }
         @media only screen and (min-width:325px){
             body{
@@ -420,8 +431,8 @@
             <img src="gifs/solzinho.gif" alt="Solzinho sorrindo animado" id="sol">
         </div>
         <div class="pran">
-            <a href="pagina-download.html"><button id="aluno">Aluno</button></a>
-            <a href="pagina-professor1.html"><button id="professor">Professor</button></a>
+            <a href="pagina-download.html" id="aluno">Aluno</a>
+            <a href="pagina-professor1.html" id="professor">Professor</a>
         </div>
          <p class="titulo">Aprender pode (e deve) ser divertido.
             O ADDA é um projeto educacional <br>que apoia a alfabetização de alunos do 6º ano por meio de jogos, <br>aulas interativas e acompanhamento pedagógico.</p>
@@ -429,7 +440,6 @@
             <img src="gifs/nuvensDois.gif" alt="nuvens brancas direita" id="nuvensDois">
         <div class="blocoUm">
             <img src="img/titulo.png" alt="quem nos somos" class="TituloG">
-            <p>olá</p>
             <p>O ADDA nasceu para apoiar alunos que, especialmente após a pandemia, enfrentam dificuldades na leitura e na escrita. Unimos educação, tecnologia e diversão para tornar o aprendizado mais acessível, interessante e eficaz.</p>
             <ul>
                 <li>Aprendizagem baseada em jogos</li>
