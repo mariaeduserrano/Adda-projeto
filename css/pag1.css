@@ -1,0 +1,412 @@
+body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #textoAdda{
+            width: 100px;
+        }
+        header, footer {
+            background-color: rgb(0, 5, 53);
+            height: 50px;
+            width: 100%;
+        }
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
+        }
+        footer{
+            position: sticky;
+            bottom: 0px;
+            z-index: 10;
+        }
+        #adda {
+            position: relative;
+            width: 100%;
+        }
+        #sol{
+            width: 15%;
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+        #flores{
+            width: 40%;
+            position: absolute;
+            z-index: 1;
+        }
+        #floresDois{
+            width: 40%;
+            position: absolute;
+            right: 10px;
+            z-index: 1;
+        }
+        #nuvens{
+            width: 20%;
+            position: absolute;
+        }
+        #nuvensDois{
+            width: 15%;
+            position: absolute;
+        }
+        #professor {
+            position: absolute;
+            background-color: rgb(113, 59, 129);
+            color: white;
+            border: none; 
+            border-radius: 50px;
+            z-index: 2;
+        }
+        #professor:hover {
+            background-color: rgb(45, 9, 77);
+        }
+        #aluno:hover {
+            background-color: rgb(61, 97, 133);
+        }
+        #aluno{
+            position: absolute;
+            background-color: rgb(116, 176, 231);
+            color: white;
+            border: none; 
+            border-radius: 50px;
+            z-index: 2;
+        }
+        .titulo{
+            background-color: rgb(116, 176, 231);
+            text-align: center;
+            border-radius: 50px;
+        }
+        h2{
+            color:rgb(0, 5, 53)
+        }
+        ul {
+            line-height: 1.8;
+        }
+        ul li::marker {
+            content:"💡 ";
+        }
+
+        .TituloG{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input{
+            font-size: 20px;
+            width: 250px;          
+            padding: 10px;        
+            border-radius: 20px;  
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+ 
+        label{
+            font-size: 20px;
+        }
+ 
+        select{
+            font-size: 20px;
+            width: 250px;          
+            padding: 10px;        
+            border-radius: 20px;  
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        textarea{
+             font-size: 20px;
+            width: 250px;          
+            padding: 10px;        
+            border-radius: 20px;  
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        ::selection{
+            color:rgb(10, 19, 90);
+            background-color: rgb(255, 241, 177);
+        }
+        @media only screen and (min-width:325px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 9%,
+            #493521 9%)
+            }
+        #flores{
+            top: 150px;
+        }
+        #floresDois{
+            top: 150px;
+        }
+        .titulo{
+            margin: 2px 10px;
+            padding: 20px;
+            border: 2px solid white;
+            font-size: 10px;
+        }
+        #nuvens{
+            top: 280px;
+            left: 15px;
+        }
+        #nuvensDois{
+            top: 290px;
+            right: 15px;
+        }
+        .blocoUm{
+            margin: 20px;
+            background-color: #ede7d9;
+            padding: 20px;
+            border-radius: 50px;
+            border: 5px solid rgb(0, 5, 53);
+            font-size: small;
+        }
+        #professor {
+            width: 80px;
+            height: 30px;
+            font-size: 14px;
+            right: 20px;
+            top: 150px;
+        }
+        #aluno{
+            width: 80px;
+            height: 30px;
+            font-size: 14px;
+            left: 20px;
+            top: 150px;
+        }
+        }
+
+
+        @media only screen and (min-width:768px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 13%,
+            #493521 13%)
+            }
+        #flores{
+            top: 250px;
+        }
+        #floresDois{
+            top: 250px;
+        }
+        .titulo{
+            margin: 10px 10px;
+            padding: 20px;
+            border: 2px solid white;
+            font-size: 15px;
+        }
+        #nuvens{
+            top: 430px;
+            left: 15px;
+        }
+        #nuvensDois{
+            top: 430px;
+            right: 15px;
+        }
+        .blocoUm{
+            margin: 40px;
+            padding: 20px;
+            border-radius: 50px;
+            font-size:medium;
+        }
+        #professor {
+            width: 120px;
+            height: 50px;
+            font-size: 20px;
+            right: 100px;
+            top: 250px;
+        }
+        #aluno{
+            width: 120px;
+            height: 50px;
+            font-size: 20px;
+            left: 100px;
+            top: 250px;
+        }
+        }
+
+
+        @media only screen and (min-width:1024px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 13%,
+            #493521 13%)
+            }
+        #flores{
+            top: 300px;
+        }
+        #floresDois{
+            top: 300px;
+        }
+        .titulo{
+            margin: 30px 20px;
+            padding: 30px;
+            border: 2px solid white;
+            font-size: 20px;
+            border-radius: 100px;
+        }
+        #nuvens{
+            top: 580px;
+            left: 25px;
+        }
+        #nuvensDois{
+            top: 560px;
+            right: 25px;
+        }
+        .blocoUm{
+            margin: 60px;
+            padding: 25px;
+            border-radius: 80px;
+            font-size: large;
+        }
+        #professor {
+            width: 120px;
+            height: 50px;
+            font-size: 20px;
+            right: 100px;
+            top: 300px;
+        }
+        #aluno{
+            width: 120px;
+            height: 50px;
+            font-size: 20px;
+            left: 100px;
+            top: 300px;
+        }
+        }
+
+
+         @media only screen and (min-width:1440px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 15%,
+            #493521 15%)
+            }
+        #flores{
+            top: 400px;
+        }
+        #floresDois{
+            top: 400px;
+        }
+        .titulo{
+            margin: 30px 50px;
+            padding: 30px;
+            border: 2px solid white;
+            font-size: 20px;
+        }
+        #nuvens{
+            top: 740px;
+            left: 90px;
+        }
+        #nuvensDois{
+            top: 750px;
+            right: 100px;
+        }
+        .blocoUm{
+            margin: 80px;
+            padding: 50px;
+            border-radius: 100px;
+            font-size: larger;
+        }
+        #professor {
+            width: 200px;
+            height: 70px;
+            font-size: 25px;
+            right: 100px;
+            top: 400px;
+        }
+        #aluno{
+            width: 200px;
+            height: 70px;
+            font-size: 25px;
+            left: 100px;
+            top: 400px;
+        }
+        }
+
+
+
+        @media only screen and (min-width:1920px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 17%,
+            #493521 17%)
+            }
+             #flores{
+            top: 550px;
+        }
+        #floresDois{
+            top: 550px;
+        }
+        .titulo{
+            margin: 50px 90px;
+            padding: 50px;
+            border: 2px solid white;
+            font-size: 22px;
+        }
+        #nuvens{
+            top: 970px;
+            left: 150px;
+        }
+        #nuvensDois{
+            top: 1000px;
+            right: 150px;
+        }
+        }
+
+
+        @media only screen and (min-width:2560px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 17%,
+            #493521 17%)
+            }
+            #flores{
+            top: 700px;
+        }
+        #floresDois{
+            top: 700px;
+        }
+        .titulo{
+            margin: 50px 250px;
+            padding: 50px;
+            border: 2px solid white;
+            font-size: 35px;
+            border-radius: 150px;
+        }
+        #nuvens{
+            top: 1250px;
+            left: 250px;
+        }
+        #nuvensDois{
+            top: 1300px;
+            right: 300px;
+        }
+        .blocoUm{
+            margin:100px;
+            padding: 70px;
+            border-radius: 150px;
+            font-size: xx-large;
+        }
+        #professor {
+            width: 300px;
+            height: 100px;
+            font-size: 50px;
+            right: 250px;
+            top: 600px;
+        }
+        #aluno{
+            width: 300px;
+            height: 100px;
+            font-size: 50px;
+            left: 250px;
+            top: 600px;
+        }
+        }
