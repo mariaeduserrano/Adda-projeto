@@ -1,0 +1,74 @@
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ede7d9;
+        }
+        #textoAdda{
+            width: 100px;
+        }
+        header, footer {
+            background-color: rgb(0, 5, 53);
+            height: 50px;
+            width: 100%;
+        }
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0px;
+            z-index: 10;
+        }
+        #sol{
+            width: 15%;
+            position: absolute;
+            right: 20px;
+            top: 50px;
+        }
+        #graminha{
+            width: 100%;
+            position: absolute;
+            bottom: 45px;
+        }
+         #flores{
+            width: 40%;
+            position: absolute;
+            z-index: 1;
+            bottom: 50px;
+        }
+        #floresDois{
+            width: 40%;
+            position: absolute;
+            right: 10px;
+            z-index: 1;
+            bottom: 50px;
+        }
+        #adda{
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 25px;
+            z-index: 1;
+       }
+       @media only screen and (min-width:325px){
+            #adda{
+            width: 70%;
+            left: 20%;
+            }
+       }
+
+       @media only screen and (min-width:768px){
+            #adda{
+            width: 50%;
+            left: 25%;
+            }
+       }
+
+       @media only screen and (min-width:1440px){
+            #adda{
+            width: 38%;
+            left: 30%;
+            }
+       }
