@@ -1,0 +1,163 @@
+body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(237, 231, 217);
+    }
+    #textoAdda{
+        width: 100px;
+    }
+    header, footer {
+        background-color: rgb(0, 5, 53);
+        height: 50px;
+        width: 100%;
+    }
+    header{
+        position: sticky;
+        z-index: 10;
+        top: 0px;
+    }
+    footer{
+        position: fixed;
+        bottom: 0px;
+        z-index: 10;
+    }
+    #graminha{
+        width: 100%;
+        position: absolute;
+        bottom: 45px;
+    }
+    #sol{
+        width: 15%;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+    }
+    #flores{
+        width: 40%;
+        position: absolute;
+        z-index: 1;
+        bottom: 50px;
+    }
+    #floresDois{
+        width: 40%;
+        position: absolute;
+        right: 10px;
+        z-index: 1;
+        bottom: 50px;
+    }
+    #login {
+        background-color: rgb(153, 199, 242);
+        color: white;
+        border: none; 
+        border-radius: 50px;
+        width: 200px;
+        height: 70px;
+        font-size: 25px;
+        position: absolute;
+        z-index: 2;
+    }
+    #login:hover {
+        background-color: rgb(61, 97, 133);
+    }
+        #cadastro {
+        background-color: rgb(251, 111, 113);
+        color: white;
+        border: none; 
+        border-radius: 50px;
+        width: 200px;
+        height: 70px;
+        font-size: 25px;
+        position: absolute;
+        z-index: 2;
+    }
+    #cadastro:hover {
+        background-color: rgb(150, 38, 42); 
+    }
+    #adda{
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 25px;
+        z-index: 1;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+    }
+    @media only screen and (min-width:325px){
+            #adda{
+            width: 70%;
+            left: 13%;
+            }
+            #login{
+                top: 200px;
+                right: 90px;
+            }
+            #cadastro{
+                top: 400px;
+                right: 90px;
+            }
+       }
+       @media only screen and (min-width:425px){
+            #adda{
+            width: 70%;
+            left: 13%;
+            }
+            #login{
+                top: 200px;
+                right: 110px;
+            }
+            #cadastro{
+                top: 400px;
+                right: 110px;
+            }
+       }
+
+       @media only screen and (min-width:620px){
+            #adda{
+            width: 50%;
+            left: 25%;
+            }
+            #login{
+                top: 350px;
+                right: 110px;
+            }
+            #cadastro{
+                top: 350px;
+                left: 110px;
+            }
+       }
+
+       @media only screen and (min-width:1440px){
+            #adda{
+            width: 38%;
+            left: 30%;
+            }
+            #login{
+                top: 400px;
+                right: 200px;
+            }
+            #cadastro{
+                top: 400px;
+                left: 200px;
+            }
+       }
+
+       @media only screen and (min-width:2560px){
+            #adda{
+            width: 38%;
+            left: 30%;
+            }
+            #login{
+                top: 1000px;
+                right: 400px;
+            }
+            #cadastro{
+                top: 1000px;
+                left: 400px;
+            }
+       }
