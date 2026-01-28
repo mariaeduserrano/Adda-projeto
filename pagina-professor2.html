@@ -11,6 +11,9 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(237, 231, 217);
         }
+        #textoAdda{
+            width: 100px;
+        }
         header, footer {
             background-color: rgb(0, 5, 53);
             height: 50px;
@@ -25,99 +28,195 @@
             position: fixed;
             bottom: 0px;
         }
-        .voltar {
-            display: flex;
-        }
-        #botao-voltar {
-            height: 100px;
-            width: auto;
-            background-color: white;
-            border: none;
-        }
-        #voltar {
-            height: 100px;
-            width: auto;
-        }
         #pranchetinha{
             position: absolute;
-            width:500px;
-            top: 10px;
+            width:10%;
+            margin-top: 300px;
             right: 190px;
-          
+            z-index: 2;
+         
         }
-    
-        .principal {
-            display: flex;
-        }
-        .content {
-            display: flex;
-            left: 350px;
-            position: sticky;
-    
-        }
+       
         .tabela {
-            position: relative;
-            background-color:white;
-            border: 5px solid;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            border: 5px solid rgb(0, 5, 53);
             border-radius: 30px;
-            border-color: rgb(0, 5, 53);
             display: flex;
             flex-direction: column;
-            height: 350px;
-            width: 370px;
-            left: 300px;
-            gap: 33px;
-            margin-top: 5px;
+            height: 200px;
+            width: 300px;
+            left: 650px;
+            gap: 40px;
+            padding: 20px;
+            top: 100px;
         }
-
+ 
        #cadastro{
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 300px;
-        margin: 18px;
-        padding: 5px;
-        border: none; 
-       }
+            flex-direction: column;
+            gap: 20px;
+            width: 250px;
+            height: 30px;
+            margin: 5px;
+            padding: 5px;
+            border: none; 
+            font-size: 60px;
 
+       }
         input {
         font-size: 20px;
-        width: 250px;          
-        padding: 10px;        
-        border-radius: 20px;   
-        border: 1px solid #ccc;
-        font-size: 16px; font-size: 20px;
-        width: 250px;          
-        padding: 10px;        
-        border-radius: 20px;   
-        border: 1px solid #ccc;
-        font-size: 16px;
+            width: 250px;          
+            padding: 10px;        
+            border-radius: 20px;   
+            border: 1px solid #ccc;
+            font-size: 16px;
        }
-
-       #cadastro input:focus{
+        input:focus{
         background-color: rgb(209, 209, 209);
        }
-
+ 
        #cadastrar{
-        position: relative;
-        background-color: aqua;
-        right: 20px;
-        left: 20px;
-        width: 150px;
-        height: 40px;
-        font-size: 18px;
-        margin-top: 270px;
-        border-radius: 15px;
-        border-color: black;
+       background-color: rgb(255, 154, 154);
+            position: absolute;
+            color: white;
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 50px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            margin-left: 70px;
+            z-index: 1;
+            text-decoration: none;
        }
-       
-    
-    </style>
+       #graminha{
+        width: 40px;
+        top: 20px;
+        position: absolute;
+       }
+       a{
+        text-decoration: none;
+       }
 
+       #florzinhas{
+        width: 40%;
+        position: absolute;
+        z-index: 1;
+        bottom: 50px;
+    } 
+
+     #florzinhasdois{
+        width: 40%;
+        position: absolute;
+        right: 10px;
+        z-index: 1;
+        bottom: 50px;}
+
+         #adda{
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 25px;
+        z-index: 1;
+    }
+
+        #solzinho{
+        width: 15%;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+    }
+
+            @media only screen and (min-width:325px){
+ 
+        #pranchetinha{
+             width: 50%;
+             margin-top: 575px;
+             right: 100px;
+        }
+ 
+        .tabela{
+            height: 360px;
+            width: 60%;
+            left: 13%;
+            top: 170px;
+            align-items: center;
+        }
+ 
+        #cadastro{
+            left: 0;
+            margin: 0;
+            width: 90%;
+            align-items: center;
+            
+        }
+ 
+        #cadastro input{
+           width: 90%;
+        }
+ 
+        #cadastrar{
+            position: relative;
+            top: 55%;
+            right: 0;
+            margin: 20px auto 0;
+            }
+
+        #graminha{
+            width: 100%;
+            margin-top: 190%;
+            right: 0%;
+        }   
+        
+        #florzinhas{
+            width: 50%;
+            margin-top: 0%;
+            left: 30px;
+        }
+
+        #florzinhasdois{
+            width: 50%;
+            margin-top: 0%;
+        }
+
+         #adda{
+            width: 20%;
+            left: 1%;
+            top: 5px;
+            }
+
+        #solzinho{
+            width: 30%;
+            right: 4%;
+        }
+}
+
+        @media only screen and (min-width:425px){
+
+            #pranchetinha{
+                margin-top: 560px;
+            }
+            #graminha{
+                margin-top: 164%;
+            }
+
+
+        }
+
+
+ 
+ 
+    </style>
     <body>
-        <header></header>
-        <div class="principal">
-            <div class="content">
+        <header>
+            <img src="img/addaTexto.png" id="adda">
+        </header>
+
+        <img src="gifs/solzinho.gif" id="solzinho">
                 <img src="img/AddaPNG.png" alt="pranchetinha" id="pranchetinha">
                 <div class="tabela">
                     <form id="cadastro">
@@ -125,15 +224,15 @@
                     <input type="Text" placeholder="Escola">
                     <input type="Text" placeholder="Graduação">
                     <input type="text" placeholder="Área de Conhecimento">
-                    <form id="Senha">
-                        <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Senha">
                     </form>
-                </div>
-                <p>meoooo deoooosss</p>
-                <a href="pagina-professor1.html" id="cadastrar"><button >Cadastrar</button></a>
+               
+                <a href="pagina-professor1.html" id="cadastrar">Cadastrar</a>
+                 </div>
                  
-            </div>
-        </div>
+                 <img src="img/graminha.png" id="graminha"> 
+                 <img src="gifs/florzinhas.gif" id="florzinhas">
+                 <img src="gifs/florzinhas.gif" id="florzinhasdois">
         <footer></footer>
     </body>
         <script>
