@@ -22,9 +22,15 @@
             z-index: 10;
         }
         #adda{
-            position: absolute;
+            position:absolute;
+            bottom: 30px;
             z-index: 1;
-            bottom: 40px;
+        }
+        #solzinho{
+            width: 15%;
+            position: absolute;
+            right: 10px;
+            top: 50px;
         }
         #graminha{
             width: 100%;
@@ -44,12 +50,6 @@
             z-index: 2;
             bottom: 50px;
         }
-        #solzinho{
-            width: 15%;
-            position: absolute;
-            right: 10px;
-            top: 50px;
-        }
         .tabela{
             position: relative;
             background-color: rgb(255, 255, 255);
@@ -57,28 +57,29 @@
             border-radius: 30px;
             display: flex;
             flex-direction: column;
-            height: 200px;
             width: 300px;
             gap: 40px;
             padding: 20px;
             top: 200px;
         }
-       #entrar{
-            background-color: rgb(255, 154, 154);
+        #cadastro, #turma{
+            background-color: rgb(88, 206, 137);
             position: relative;
             color: white;
-            width: 150px;
             height: 50px;
             font-size: 20px;
             border-radius: 50px;
-            border: none;
-            margin-top: 50px;
-            margin-left: 70px;
             z-index: 1;
-            text-decoration: none;
+            padding: 10px;
         }
-        #entrar:hover{
-            background-color: #bb5959;
+        #cadastro:hover{
+            background-color: rgb(30, 107, 82);
+        }
+        #turma:hover{
+            background-color: rgb(98, 48, 100);
+        }
+        #turma{
+            background-color: rgb(192, 149, 233);
         }
         a{
             text-decoration: none;
@@ -88,26 +89,6 @@
             justify-content: center;
             transition: background-color 0.3s;
         }
-        #login{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            width: 250px;
-            height: 30px;
-            margin: 5px;
-            padding: 5px;
-            border: none; 
-            font-size: 60px;
-
-        }
-        input{
-            font-size: 20px;
-            width: 100%;          
-            padding: 10px;        
-            border-radius: 20px;   
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
         @media only screen and (min-width:325px){
             #adda{
             width: 70%;
@@ -115,6 +96,18 @@
             }
             .tabela{
                 left: 15px;
+            }
+            #flores{
+                left: 20px
+            }
+        }
+        @media only screen and (min-width:425px){
+            #adda{
+            width: 70%;
+            left: 50px;
+            }
+            .tabela{
+                left: 40px;
             }
             #flores{
                 left: 20px
