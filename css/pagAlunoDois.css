@@ -22,9 +22,15 @@
             z-index: 10;
         }
         #adda{
-            position: absolute;
+            position:absolute;
+            bottom: 30px;
             z-index: 1;
-            bottom: 40px;
+        }
+        #solzinho{
+            width: 10%;
+            position: absolute;
+            right: 10px;
+            top: 50px;
         }
         #graminha{
             width: 100%;
@@ -32,38 +38,30 @@
             bottom: 50px;
         }
         #flores{
-            width: 45%;
+            width: 50%;
             position: absolute;
             z-index: 2;
             bottom: 50px;
         }
         #flores2{
-            width: 45%;
+            width: 50%;
             position: absolute;
             right: 20px;
             z-index: 2;
             bottom: 50px;
         }
-        #solzinho{
-            width: 15%;
-            position: absolute;
-            right: 10px;
-            top: 50px;
-        }
-        .tabela{
+        .tabela {
             position: relative;
             background-color: rgb(255, 255, 255);
             border: 5px solid rgb(0, 5, 53);
             border-radius: 30px;
             display: flex;
             flex-direction: column;
-            height: 200px;
             width: 300px;
             gap: 40px;
             padding: 20px;
-            top: 150px;
         }
-       #entrar{
+        #cadastrar {
             background-color: rgb(255, 154, 154);
             position: relative;
             color: white;
@@ -72,23 +70,12 @@
             font-size: 20px;
             border-radius: 50px;
             border: none;
-            margin-top: 50px;
+            margin-top: 230px;
             margin-left: 70px;
             z-index: 1;
             text-decoration: none;
         }
-        #entrar:hover{
-            background-color: #bb5959;
-        }
-        a{
-            text-decoration: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s;
-        }
-        #login{
+        #Cadastrando{
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -99,83 +86,85 @@
             border: none; 
             font-size: 60px;
         }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
         input{
             font-size: 20px;
-            width: 100%;          
+            width: 250px;          
             padding: 10px;        
-            border-radius: 20px;   
+            border-radius: 20px;  
             border: 1px solid #ccc;
             font-size: 16px;
         }
         @media only screen and (min-width:325px){
             #adda{
             width: 70%;
-            left: 50px;
+            right: 50px;
             }
             .tabela{
                 left: 15px;
+                top: 100px;
             }
-            #flores{
-                left: 20px
+        }
+        @media only screen and (min-width:425px){
+            #adda{
+            width: 70%;
+            right: 50px;
+            }
+            .tabela{
+                left: 40px;
+                top: 50px;
             }
         }
         @media only screen and (min-width:768px){
             #adda{
             width: 60%;
-            left: 0px;
+            right: 0px;
             }
             .tabela{
-                left: 350px;
-            }
-            #flores{
-                left: 20px
+                left: 50px;
+                top: 100px;
             }
         }
         @media only screen and (min-width:1024px){
             #adda{
             width: 60%;
-            left: 0px;
+            right: 0px;
             }
             .tabela{
-                left: 500px;
-            }
-            #flores{
-                left: 20px
+                left: 100px;
             }
         }
         @media only screen and (min-width:1440px){
             #adda{
             width: 50%;
-            left: 0px;
+            right: 0px;
             }
             .tabela{
-                left: 700px;
-            }
-            #flores{
-                left: 20px
+                left: 250px;
             }
         }
         @media only screen and (min-width:1920px){
             #adda{
             width: 40%;
-            left: 0px;
+            right: 0px;
             }
             .tabela{
-                left: 1000px;
-            }
-            #flores{
-                left: 20px
+                left: 500px;
             }
         }
         @media only screen and (min-width:2560px){
             #adda{
             width: 40%;
-            left: 0px;
+            right: 0px;
             }
             .tabela{
                 left: 1000px;
-            }
-            #flores{
-                left: 20px
             }
         }
