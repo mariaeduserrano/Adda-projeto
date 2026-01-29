@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pagina professor 1</title>
-        <link rel="stylesheet" href="css/pagProfDois.css">
-    </head>
-<<<<<<< HEAD
-    <style>
-        body {
+ body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(237, 231, 217);
@@ -27,17 +17,16 @@
             top: 0px;
         }
         footer{
-            position: fixed;
+            position: sticky;
             bottom: 0px;
+            margin-top: 194%;
         }
         #pranchetinha{
             position: absolute;
             width:10%;
             margin-top: 300px;
             right: 190px;
-
             z-index: 2;
-
          
         }
        
@@ -57,9 +46,7 @@
         }
  
        #cadastro{
-        position: relative;
         display: flex;
-
             flex-direction: column;
             gap: 20px;
             width: 250px;
@@ -77,15 +64,12 @@
             border-radius: 20px;   
             border: 1px solid #ccc;
             font-size: 16px;
-
        }
         input:focus{
         background-color: rgb(209, 209, 209);
        }
  
        #cadastrar{
-
-
        background-color: rgb(255, 154, 154);
             position: absolute;
             color: white;
@@ -144,8 +128,8 @@
  
         #pranchetinha{
              width: 50%;
-             margin-top: 575px;
-             right: 100px;
+             margin-top: 540px;
+             right: 90px;
         }
  
         .tabela{
@@ -177,19 +161,19 @@
 
         #graminha{
             width: 100%;
-            margin-top: 190%;
+            margin-top: 179%;
             right: 0%;
         }   
         
         #florzinhas{
             width: 50%;
-            margin-top: 0%;
+            top: 79%;
             left: 30px;
         }
 
         #florzinhasdois{
             width: 50%;
-            margin-top: 0%;
+            top: 79%;
         }
 
          #adda{
@@ -207,60 +191,189 @@
         @media only screen and (min-width:425px){
 
             #pranchetinha{
-                margin-top: 560px;
+                margin-top: 525px;
             }
             #graminha{
-                margin-top: 164%;
+                margin-top: 157%;
             }
+
+            footer{
+            margin-top: 173%;
+        }
 
 
         }
 
+        @media only screen and (min-width:768px){
+        
+            #graminha{
+                margin-top: 76%;
+                
+            }
+            #florzinhas{
+            width: 50%;
+            top: 67%;
+            left: 20px;
+        }
 
+        #florzinhasdois{
+            width: 50%;
+            top: 67%;
+        }
+
+
+            #pranchetinha{
+                width: 35%;
+                margin-top: 460px;
+                left: 68%;
+            }
+
+            #solzinho{
+                width: 20%;
+            }
+
+            #adda{
+                width: 15%;
+                top: 0px;
+            }
+
+            .tabela{
+                top:160px;
+                left: 5%;
+            }
+
+             footer{
+            margin-top: 95%;
+
+        
+        }
+
+
+        }
+
+        @media only screen and (min-width:1024px){
+
+            #graminha{
+                margin-top: 53%;
+            }
+
+            #pranchetinha{
+                margin-top: 410px;
+                left: 70%;
+            }
+
+            #florzinhas{
+                width: 40%;
+                top: 67%;
+            }
+
+            #florzinhasdois{
+                width: 40%;
+                left: 43%;
+                top: 67%;
+            }
+
+            footer{
+            margin-top: 73%;
+            }
+
+            #adda{
+                width: 10%;
+            }
+        }
+
+         @media only screen and (min-width:1440px){
+
+            footer{
+            margin-top: 58%;
+            }
+
+            #graminha{
+                margin-top: 37%;
+            }
+
+            #florzinhas{
+                width: 40%;
+                top: 60%;
+            }
+
+            #florzinhasdois{
+                width: 40%;
+                left: 43%;
+                top: 60%;
+            }
+
+            #pranchetinha{
+                margin-top: 340px;
+            }
+
+            #solzinho{
+                width: 15%;
+            }
+
+            #adda{
+                width: 7%;
+            }
+        }
+
+        @media only screen and (min-width:2560px){
+
+           footer{
+            margin-top: 62%;
+            }
+
+            #graminha{
+            margin-top: 40%;
+            }
+
+            #adda{
+                width: 4%;
+            }
+
+            #pranchetinha{
+                margin-top: 580px;
+                width: 40%;
+                left: 66%;
+            }
+
+            .tabela{
+            height: 700px;
+            width: 50%;
+            left: 13%;
+            top: 200px;
+            align-items: center;
+            border: 10px solid rgb(0, 5, 53);
+            border-radius: 30px;
+        }
  
+        #cadastro{
+            left: 0;
+            margin: 0;
+            width:900px;
+            height: 500px;
+            align-items: center;
+            padding: 20px;
+            gap: 40px;
+            padding: 5px;
+           
+            
+        }
  
-    </style>
-=======
+        #cadastro input{
+           width: 90%;
+           height: 400%;
+           font-size: 40px;
+           
+        }
+ 
+        #cadastrar{
+            position: relative;
+            width: 25%;
+            height: 12%;
+            top: 0%;
+            font-size: 40px;
+            }
+
+
+        }
     
->>>>>>> c6be7eab73583f10f92d2190848ca4538b03c5ec
-    <body>
-        <header>
-            <img src="img/addaTexto.png" alt="Logo do projeto adda" id="adda">
-        </header>
-
-<<<<<<< HEAD
-        <img src="gifs/solzinho.gif" id="solzinho">
-
-                <img src="img/AddaPNG.png" alt="pranchetinha" id="pranchetinha">
-=======
-        <img src="gifs/solzinho.gif" alt="sol" id="solzinho">
-                <img src="img/AddaPNG.png" alt="lampada do adda" id="pranchetinha">
->>>>>>> c6be7eab73583f10f92d2190848ca4538b03c5ec
-                <div class="tabela">
-                    <form id="cadastro">
-                    <input type="text" placeholder="CPF" maxlength="11">
-                    <input type="Text" placeholder="Escola">
-                    <input type="Text" placeholder="Graduação">
-                    <input type="text" placeholder="Área de Conhecimento">
-                    <input type="password" placeholder="Senha">
-                    </form>
-
-               
-                <a href="pagina-professor1.html" id="cadastrar">Cadastrar</a>
-                 </div>
-                 
-<<<<<<< HEAD
-                 <img src="img/graminha.png" id="graminha"> 
-                 <img src="gifs/florzinhas.gif" id="florzinhas">
-                 <img src="gifs/florzinhas.gif" id="florzinhasdois">
-
-=======
-                 <img src="img/graminha.png" alt="mato" id="graminha"> 
-                 <img src="gifs/florzinhas.gif" alt="flores" id="florzinhas">
-                 <img src="gifs/florzinhas.gif" alt="flores" id="florzinhasdois">
->>>>>>> c6be7eab73583f10f92d2190848ca4538b03c5ec
-        <footer></footer>
-    </body>
-        <script>
-        </script>
-</html>
