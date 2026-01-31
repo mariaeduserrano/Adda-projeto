@@ -124,18 +124,30 @@
         top: 50px;
     }
 
-            @media only screen and (min-width:325px){
- 
-        #pranchetinha{
+            @media only screen and (min-width:320px){
+
+           #pranchetinha{
              width: 50%;
-             margin-top: 540px;
+             margin-top: 550px;
              right: 90px;
         }
  
+
+        footer{
+            margin-top: 219%;
+            width: 294px;
+        }
+
+        header{
+            width: ;
+        }
+
+    
+
         .tabela{
             height: 360px;
             width: 60%;
-            left: 13%;
+            left: 9%;
             top: 170px;
             align-items: center;
         }
@@ -160,31 +172,107 @@
             }
 
         #graminha{
-            width: 100%;
-            margin-top: 179%;
-            right: 0%;
+            width: 91%;
+            margin-top: 207%;
+            right: 9%;
         }   
         
         #florzinhas{
-            width: 50%;
-            top: 79%;
-            left: 30px;
+            width: 45%;
+            top:  77%;
+            left: 2px;
         }
 
         #florzinhasdois{
-            width: 50%;
-            top: 79%;
+            width: 45%;
+            top: 77%;
+            left: 150px;
+
+
         }
 
          #adda{
-            width: 20%;
+            width: 30%;
             left: 1%;
             top: 5px;
             }
 
         #solzinho{
             width: 30%;
-            right: 4%;
+            right: 10%;
+        }
+}
+
+            @media only screen and (min-width:375px){
+ 
+        #pranchetinha{
+             width: 50%;
+             margin-top: 510px;
+             right: 90px;
+        }
+ 
+        .tabela{
+            height: 360px;
+            width: 60%;
+            left: 10%;
+            top: 160px;
+            align-items: center;
+        }
+ 
+        #cadastro{
+            left: 0;
+            margin: 0;
+            width: 90%;
+            align-items: center;
+            
+        }
+ 
+        #cadastro input{
+           width: 90%;
+        }
+ 
+        #cadastrar{
+            position: relative;
+            top: 55%;
+            right: 0;
+            margin: 20px auto 0;
+            }
+
+        #graminha{
+            width: 91%;
+            margin-top: 171%;
+            right: 9%;
+        }   
+        
+        #florzinhas{
+            width: 50%;
+            top: 74%;
+            left: 10px;
+        }
+
+        #florzinhasdois{
+            width: 50%;
+            top: 74%;
+        }
+
+         #adda{
+            width: 3%;
+            left: 1%;
+            top: 5px;
+            }
+
+        #solzinho{
+            width: 30%;
+            right: 9%;
+        }
+
+        footer{
+            margin-top: 205%;
+            width: 375px;
+        }
+
+        header{
+            width: 3475px;
         }
 }
 
@@ -194,11 +282,18 @@
                 margin-top: 525px;
             }
             #graminha{
-                margin-top: 157%;
+                margin-top: 164%;
             }
 
             footer{
-            margin-top: 173%;
+            margin-top: 181%;
+        }
+
+        #florzinhas{
+            top: 82%;
+        }
+        #florzinhasdois{
+            top: 82%;
         }
 
 
@@ -207,18 +302,19 @@
         @media only screen and (min-width:768px){
         
             #graminha{
-                margin-top: 76%;
+                margin-top: 84%;
+                
                 
             }
             #florzinhas{
             width: 50%;
-            top: 67%;
-            left: 20px;
+            top: 74%;
+            left: 1px;
         }
 
         #florzinhasdois{
             width: 50%;
-            top: 67%;
+            top: 74%;
         }
 
 
@@ -243,8 +339,12 @@
             }
 
              footer{
-            margin-top: 95%;
+            margin-top: 104%;
+            width: 110%;
 
+            header{
+                width: 110%;
+            }
         
         }
 
@@ -254,7 +354,7 @@
         @media only screen and (min-width:1024px){
 
             #graminha{
-                margin-top: 53%;
+                margin-top: 55%;
             }
 
             #pranchetinha{
@@ -264,17 +364,17 @@
 
             #florzinhas{
                 width: 40%;
-                top: 67%;
+                top: 69%;
             }
 
             #florzinhasdois{
                 width: 40%;
                 left: 43%;
-                top: 67%;
+                top: 69%;
             }
 
             footer{
-            margin-top: 73%;
+            margin-top: 75%;
             }
 
             #adda{
@@ -285,22 +385,22 @@
          @media only screen and (min-width:1440px){
 
             footer{
-            margin-top: 58%;
+            margin-top: 60%;
             }
 
             #graminha{
-                margin-top: 37%;
+                margin-top: 39%;
             }
 
             #florzinhas{
                 width: 40%;
-                top: 60%;
+                top: 63%;
             }
 
             #florzinhasdois{
                 width: 40%;
                 left: 43%;
-                top: 60%;
+                top: 63%;
             }
 
             #pranchetinha{
@@ -319,11 +419,19 @@
         @media only screen and (min-width:2560px){
 
            footer{
-            margin-top: 62%;
+            margin-top: 65%;
+            
             }
 
             #graminha{
-            margin-top: 40%;
+            margin-top: 43%;
+            }
+
+            #florzinhas{
+                top: 67%;
+            }
+            #florzinhasdois{
+                top: 67%;
             }
 
             #adda{
