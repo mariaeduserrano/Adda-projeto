@@ -1,16 +1,27 @@
-body {
+        body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
         }
+        /* menu */
         #textoAdda{
             width: 100px;
-            padding: 15px;
+            margin-right: auto;
+        }
+        .menuPc{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
         }
         .menu{
             display: flex;
-            gap: 50px;
-            flex-direction: row;
-            align-items: center;
+            gap: 100px;
+            padding: 15px;
+        }
+        .topinho{
+            padding: 0.5rem 0.1rem;
         }
         header, footer {
             background-color: rgb(0, 5, 53);
@@ -31,6 +42,19 @@ body {
             bottom: 0px;
             z-index: 10;
         }
+        /*menu celular*/
+        .menuIcone{
+            display:none;
+        }
+        .menuCelular{
+            display: none;
+        }
+        @media screen and (max-width: 730px){
+            .menuPc{
+                display: none;
+            }
+        }
+        /* elementos ilustrados da página */
         #adda {
             position: relative;
             width: 100%;
@@ -60,6 +84,8 @@ body {
             width: 15%;
             position: absolute;
         }
+
+        /* botões de opção de usuaro */
         #professor {
             position: absolute;
             background-color: rgb(113, 59, 129);
@@ -82,6 +108,8 @@ body {
             border-radius: 50px;
             z-index: 2;
         }
+
+        /* elementos gerais da página */
         .titulo{
             background-color: rgb(116, 176, 231);
             text-align: center;
@@ -103,9 +131,9 @@ body {
             margin: 0 auto;
         }
 
+        /* formulário */
         input{
-            font-size: 20px;
-            width: 250px;          
+            font-size: 20px;          
             padding: 10px;        
             border-radius: 20px;  
             border: 1px solid #ccc;
@@ -131,10 +159,10 @@ body {
             align-items: center;
             justify-content: center;
             transition: background-color 0.3s;
-            color: rgb(150, 102, 102);
+            color: rgb(255, 255, 255);
         }
         textarea{
-             font-size: 20px;
+            font-size: 20px;
             width: 250px;          
             padding: 10px;        
             border-radius: 20px;  
@@ -145,6 +173,151 @@ body {
             color:rgb(10, 19, 90);
             background-color: rgb(255, 241, 177);
         }
+
+
+
+        /* botão login */
+        .fazerLogin{
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: medium;
+            margin-left: auto;
+        }
+        button.fazerLogin{
+            background-color: rgb(69, 65, 106);
+        }
+        .fazerLogin:hover{
+            background-color: rgb(30, 24, 47);
+            transition: 0.3s;
+        }
+
+        /* modal */
+        dialog:backdrop{
+            background-color: rgba(0, 0, 0, 1.0);
+        }
+        dialog a {
+            color:rgb(255, 241, 177)
+        }
+        dialog{
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(0, 5, 53);
+            color: white;
+            padding: 10px;
+            width: 25%;
+        }
+        .corpoModal{
+            display: flex;
+            flex-direction: column;
+        }
+        .tituloModal{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: large;
+        }
+        
+        /* fechar aba de login */
+        .fecharAba{
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            font-size: 15px;
+            color: white;
+        }
+
+        /* inputs */
+        .inputsModal{
+            display: flex;
+            flex-direction: column;
+            gap: 3px
+        }
+        .inputsModal label{
+            font-size: 15px;
+        }
+        .inputsModal input{
+            border-radius: 15px;
+        }
+        .inputsModal input:focus{
+            outline: 2px solid rgb(255, 241, 177);
+        }
+
+        /* botão entrar */
+        .botaoLogin{
+            background-color: rgb(69, 65, 106);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .botaoLogin:hover{
+            background-color: rgb(30, 24, 47);
+            transition: 0.3s;
+        }
+        .botaoLogin a {
+            color:white
+        }
+
+        /* opção para criar conta */
+        #opçãoCadastro{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #criarConta{
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+        }
+        .cadastroModal{
+            margin-left: 5px;
+        }
+
+        /* modal de cadastro */
+        .fecharDois{
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            font-size: 15px;
+            color: white;
+        }
+        .seCadastrar{
+            background-color: rgb(69, 65, 106);
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 20px;
+            color: white;
+        }
+        .seCadastrar:hover{
+            background-color: rgb(30, 24, 47);
+            transition: 0.3s;
+        }
+
+        /* sucesso no cadastro */
+        .fecharSucesso{
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            font-size: 15px;
+            color: white;
+        }
+        .openLogin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sucessC{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* responsivo */
         @media only screen and (min-width:325px){
             body{
                 background: linear-gradient(to bottom,

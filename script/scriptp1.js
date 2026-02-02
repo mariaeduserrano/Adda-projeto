@@ -62,6 +62,7 @@ cadastrar.forEach(button => {
         let modalId = button.getAttribute("data-modal")
         let modalSucesso = document.getElementById(modalId)
 
+        
         modalSucesso.showModal();
     })
 })
@@ -72,7 +73,7 @@ openLogin.forEach(buttons => {
         let modalLogin = document.getElementById(modalId)
 
     modalLogin.showModal();
-    modalCadastro.close();
+
     });
     
 });
