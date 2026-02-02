@@ -1,0 +1,85 @@
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(237, 231, 217);
+        }
+       
+
+         header, footer {
+            background-color: rgb(0, 5, 53);
+            height: 50px;
+            width: 100%;
+        }
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
+        }
+        footer{
+            position: sticky;
+            bottom: 0px;
+        }
+        .cabecalho {
+            display: flex;
+            padding: 0px;
+        }
+        #botao-voltar {
+            height: 100px;
+            width: auto;
+            background-color: white;
+            border: none;
+        }
+        #voltar {
+            height: 100px;
+            width: auto;
+        }
+        #texto {
+            font-size: 30px;
+            gap: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .principal {
+            display: flex;
+            padding: 10px;
+        }
+        
+        .tabela {
+            width: 500px;
+            height: 250px;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: white;
+            border: 1px solid;
+            border-radius: 10px;
+            overflow: hidden;
+            left: 200px;
+            font-size: 20px;
+        }
+        .tabela tr:last-child{
+            border-bottom: none;
+        }
+        .tabela th, .tabela td {
+            padding: 12px 8px;
+            border-right: 1px solid;
+          
+
+        }
+        #cadastrar {
+            height: 90px;
+            width: auto;
+            border: none;
+            background-color: rgb(0, 5, 53);
+            color: white;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        #pranchetinha {
+            position: relative;
+            width: 500px;
+            left: 200px;
+            margin-top: 1px;
+        }
+
+        @media only screen and (min-width:325px){
+            
+        }
