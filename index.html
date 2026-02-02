@@ -7,25 +7,157 @@
     <link rel="stylesheet" href="css/pag1.css">
 </head>
 <body>
-    <header>
+<!-- menu -->
+    <a id="home"></a>
+    <header class="topinho">
+        <div class="menuPc">
        <img src="img/addaTexto.png" alt="tipografia da logo do projeto adda" id="textoAdda">
-    </header>
 
-        <div>
+       <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#comoFunciona">Como funciona o projeto</a>
+        <a href="#contato">Contato</a>
+       </nav>
+
+       <button class="fazerLogin" data-modal="modalLogin">
+        Login
+        </button>
+        </div>
+
+        <div class="menuIcone">
+            <button><img class=icon src="img/menu.png"></button>
+        </div>
+
+        <div class="menuCelular">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#comoFunciona">Como funciona o projeto</a>
+            <a href="#contato">Contato</a>
+
+            <button class="fazerLogin" data-modal="modalLogin">
+        Login
+        </button>
+        </div>
+    </header>
+    <!-- modal para login -->
+        <dialog id="modalLogin">
+            <form>
+
+                <div class="tituloModal">
+
+                    <h3>Faça o seu Login</h3>
+
+                    <button class="fecharAba" data-modal="modalLogin" type="button">
+                        X
+                    </button>
+
+                </div>
+                <!--formulário de login-->
+                <div class="corpoModal">
+                    <div class="inputsModal">
+                    <label for="Email">
+                        E-mail
+                    </label>
+                    <input type="text" id="email" name="email" placeholder="name@exemplo.com.br">
+                    <br>
+                    <label for="password">
+                        Senha
+                    </label>
+                    <input type="password" id="senha" name="senha" placeholder="digite sua senha">
+                    </div>
+                </div>
+                <!--Esqueci senha e opção de cadastro-->
+                <div id="opçãoCadastro">
+                
+                <p>Ainda não tem uma conta?</p>
+                
+                <a href="#" class="esqueciSenha">Esquici senha</a>
+                </div>
+                <div id="criarConta">
+                <span>Crie já clicando</span>
+
+                <a type="button" class="cadastroModal" data-modal="modalParaCadastro"> aqui!</a>
+                
+                </div>
+                <!--botão de entrar na plataforma-->
+                <div class="botaoLogin">
+                    <a href="pagina-aluno1.html" class="entrar">Entrar</a>
+                </div>
+            </form>
+            
+        </dialog>
+
+<!-- modal para cadastro -->
+        <dialog id="modalParaCadastro">
+            <form>
+                <div class="tituloModal"> 
+                    <h3>Crie sua conta!</h3>
+
+                    <button class="fecharDois" data-modal="modalParaCadastro" type="button">
+                    X
+                    </button>
+                </div>
+                <!--formulário de cadastro-->
+                <div class="corpoModal">
+                    <div class="inputsModal">
+                        <label for="name">
+                            Nome Completo
+                        </label>
+                        <input type="text" id="nome" name="nome" placeholder="nome completo">
+                        <br>
+                        <label for="email">
+                            E-mail
+                        </label>
+                        <input type="text" id="emailCadastro" name="emailParaCadastro" placeholder="name@exemplo.com.br">
+                        <br>
+                        <label for="password">
+                            Senha
+                        </label>
+                        <input type="password" id="senhaParaCadastro" name="senhaParaCadastro" placeholder="crie uma senha">
+                        <br>
+                        <label for="password">
+                            Confirmar senha
+                        </label>
+                        <input type="password" id="confirmarSenha" name="confirmaçãoDeSenha" placeholder="confrme sua senha">
+                    </div>
+                </div>
+                <!--botão de cadastro-->
+                <a type="button" class="seCadastrar" data-modal="SucessoNoCadastro">
+                    Cadastrar-se
+                </a>
+            </form>
+        </dialog>
+        <!--modal de sucesso no cadastro-->
+        <dialog id="SucessoNoCadastro">
+            <button class="fecharSucesso" data-modal="SucessoNoCadastro" type="button">
+                X
+            </button> 
+
+            <h5 id="sucessC">CADASTRO REALIZADO COM SUCESSO!</h5>
+            <!--botão que direciona para o login-->
+            <a type="button" class="openLogin" data-modal="modalLogin">
+                fazer login na plataforma
+            </a>
+        </dialog>
+
+        <!--elementos ilustrados-->
             <img src="gifs/florzinhas.gif" alt="florzinhas na grama lado esquerdo" id="flores">
             <img src="gifs/florzinhas.gif" alt="florzinhas na grama do lado direito" id="floresDois">
             <img src="img/addas.png" alt="Personagem adda junto com baloes de fala" id="adda">  
             <img src="gifs/solzinho.gif" alt="Solzinho sorrindo animado" id="sol">
-        </div>
+        <!--opções de usuario-->
         <div class="pran">
             <a href="pagina-download.html" id="aluno">Aluno</a>
             <a href="pagina-professor1.html" id="professor">Professor</a>
         </div>
+        <!-- Sobre o projeto -->
          <p class="titulo">Aprender pode (e deve) ser divertido.
             O ADDA é um projeto educacional <br>que apoia a alfabetização de alunos do 6º ano por meio de jogos, <br>aulas interativas e acompanhamento pedagógico.</p>
             <img src="gifs/nuvensDois.gif" alt="nuvens brancas esquerda" id="nuvens">
             <img src="gifs/nuvensDois.gif" alt="nuvens brancas direita" id="nuvensDois">
         <div class="blocoUm">
+            <a id="sobre"></a>
             <img src="img/titulo.png" alt="quem nos somos" class="TituloG">
             <p>O ADDA nasceu para apoiar alunos que, especialmente após a pandemia, enfrentam dificuldades na leitura e na escrita. Unimos educação, tecnologia e diversão para tornar o aprendizado mais acessível, interessante e eficaz.</p>
             <ul>
@@ -42,6 +174,8 @@
                 <li>Compromisso com o aprendizado</li>
             </ul>
             <hr>
+            <!--como o projeto funciona-->
+            <a id="comoFunciona"></a>
             <img src="img/tituloDois.png" alt="titulo de como funciona" class="TituloG">
             <p>O projeto é dividido em duas plataformas pensadas para públicos diferentes:</p>
             <h2>App do Aluno</h2>
@@ -60,6 +194,8 @@
                 <li>Acesso organizado e intuitivo</li>
             </ul>
             <hr>
+            <!--contato-->
+            <a id="contato"></a>
             <img src="img/tituloQuatro.png" alt="titulo sobre as formas de contato" class="TituloG">
             <p>Acompanhe o ADDA e fique por dentro das novidades.</p>
             <p>📲 Instagram: @addaeducacaodivertida</p>
@@ -110,8 +246,11 @@
                 <p>
                     <textarea name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Digite sua mensagm aqui!"></textarea>
                 </p>
+                <button type="submit">Enviar</button>
                 </form>
             </div>
         </div>
     <footer></footer>
+    <script src="script/scriptp1.js"></script>
 </body>
+</html>
