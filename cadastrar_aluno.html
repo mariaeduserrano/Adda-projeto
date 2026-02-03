@@ -17,13 +17,20 @@
                 <input id="Data-de-nascimento" type="date" placeholder="Data de nascimento">
                 <input id="senha" type="password" placeholder="Senha">
             </form>
-            <button type="submit" id="cadastrar">Cadastrar</button>
+            <button class="open-modal" data-modal="modal-1" id="cadastrar">Cadastrar</button>
         </div>
+        <dialog id="modal-1">
+            <button class="close-modal" data-modal="modal-1" type="button" id="x">
+                x
+            </button>
+            <h2>Aluno cadastrado com sucesso!</h2>
+        </dialog>
 
         <img src="img/AddaPNG.png" alt="pranchetinha" id="adda">
         <img src="gifs/florzinhas.gif" alt="flores coloridas de roxo, rosa e branco" id="flores">
         <img src="gifs/florzinhas.gif" alt="flores coloridas de roxo, rosa e branco" id="flores2">
         <img src="img/graminha.png" alt="grama ilustrada" id="graminha">
         <footer></footer>
+        <script src="script/script.js"></script>
     </body>
 </html>

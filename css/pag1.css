@@ -2,11 +2,15 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             overflow-x: hidden;
+            background-color: #493521;
         }
+        #sol, #adda{
+            background-color: #ede7d9;
+        }
+
         /* menu */
         #textoAdda{
             width: 100px;
-            margin-right: auto;
         }
         .menuPc{
             display: flex;
@@ -17,8 +21,11 @@
         }
         .menu{
             display: flex;
-            gap: 100px;
             padding: 15px;
+            font-size: 50px;
+        }
+        .menu a{
+            font-size: 20px;
         }
         .topinho{
             padding: 0.5rem 0.1rem;
@@ -51,38 +58,102 @@
         }
         @media screen and (max-width: 730px){
             .menuPc{
+                padding: 1.5rem 1rem;
+            }
+            .menu{
                 display: none;
             }
+            .login{
+                display: none;
+            }
+            .menuIcone{
+                display: block;
+            }
+            .menuIcone img{
+                width: 40px;
+            }
+            .menuIcone button{
+                background-color: transparent;
+                border: none;
+                width: 50%;
+                cursor: pointer;
+            }
+            #textoAddaMobile{
+                width: 100px;
+                margin-left: auto;
+            }
+            .menuCelular a{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+            .menuCelular .menucell{
+                display: block;
+                padding-top: 1.2rem;
+            }
+            .menuCelular .login{
+                display: block;
+                padding-top: 1rem 2rem;
+            }
+            .menuCelular .login button{
+                width: 100%;
+            }
+            .open{
+                display: block;
+            }
         }
+        
+
+
+
         /* elementos ilustrados da página */
+        .topo{
+            position: relative;
+            width: 100%;
+            display: inline-block;
+        }
         #adda {
             position: relative;
             width: 100%;
+            display: block;
         }
         #sol{
             width: 15%;
             position: absolute;
             right: 50px;
-            top: 50px;
+            top: 70px;
         }
         #flores{
             width: 40%;
             position: absolute;
             z-index: 1;
+            bottom: 0;
         }
         #floresDois{
             width: 40%;
             position: absolute;
             right: 10px;
             z-index: 1;
+            bottom: 0;
         }
         #nuvens{
             width: 20%;
             position: absolute;
+            top: 7px;
+            left: 5px
         }
         #nuvensDois{
             width: 15%;
             position: absolute;
+            top: 0;
+            right: 5px;
+        }
+
+        .nuvensContainer {
+            position: relative;
+            width: 100%;
+            padding-bottom: 50px;
         }
 
         /* botões de opção de usuaro */
@@ -114,6 +185,8 @@
             background-color: rgb(116, 176, 231);
             text-align: center;
             border-radius: 50px;
+            margin: 0;
+            padding: 1rem;
         }
         h2{
             color:rgb(0, 5, 53)
@@ -132,21 +205,24 @@
         }
 
         /* formulário */
-        input{
+        .contato{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .contato input{
             font-size: 20px;          
             padding: 10px;        
             border-radius: 20px;  
             border: 1px solid #ccc;
             font-size: 16px;
         }
- 
-        label{
+        .contato label{
             font-size: 20px;
         }
- 
         select{
             font-size: 20px;
-            width: 250px;          
+            width: 100%;          
             padding: 10px;        
             border-radius: 20px;  
             border: 1px solid #ccc;
@@ -163,7 +239,7 @@
         }
         textarea{
             font-size: 20px;
-            width: 250px;          
+            width: 90%;          
             padding: 10px;        
             border-radius: 20px;  
             border: 1px solid #ccc;
@@ -172,6 +248,22 @@
         ::selection{
             color:rgb(10, 19, 90);
             background-color: rgb(255, 241, 177);
+        }
+        .enviarForm{
+            border-radius: 10px;
+            color: white;
+            padding: 10px 25px;
+            font-size: large;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+        }
+        button.enviarForm{
+            background-color: rgb(0, 5, 53);
+        }
+        .enviarForm:hover{
+            background-color: rgb(10, 19, 90);
+            transition: 0.5s;
         }
 
 
@@ -319,36 +411,18 @@
 
         /* responsivo */
         @media only screen and (min-width:325px){
-            body{
-                background: linear-gradient(to bottom,
-            #ede7d9 9%,
-            #493521 9%)
-            }
-        #flores{
-            top: 150px;
-        }
-        #floresDois{
-            top: 150px;
-        }
+         
         .titulo{
             margin: 2px 10px;
             padding: 20px;
             border: 2px solid white;
-            font-size: 10px;
-        }
-        #nuvens{
-            top: 280px;
-            left: 15px;
-        }
-        #nuvensDois{
-            top: 290px;
-            right: 15px;
+            font-size: 7px;
         }
         .blocoUm{
             margin: 20px;
             background-color: #ede7d9;
             padding: 20px;
-            border-radius: 50px;
+            border-radius: 40px;
             border: 5px solid rgb(0, 5, 53);
             font-size: small;
         }
@@ -370,35 +444,19 @@
 
 
         @media only screen and (min-width:768px){
-            body{
-                background: linear-gradient(to bottom,
-            #ede7d9 13%,
-            #493521 13%)
-            }
-        #flores{
-            top: 250px;
-        }
-        #floresDois{
-            top: 250px;
-        }
+         .menu{
+            gap: 30px;
+         }
         .titulo{
             margin: 10px 10px;
             padding: 20px;
             border: 2px solid white;
             font-size: 15px;
         }
-        #nuvens{
-            top: 430px;
-            left: 15px;
-        }
-        #nuvensDois{
-            top: 430px;
-            right: 15px;
-        }
         .blocoUm{
             margin: 40px;
             padding: 20px;
-            border-radius: 50px;
+            border-radius: 40px;
             font-size:medium;
         }
         #professor {
@@ -419,17 +477,9 @@
 
 
         @media only screen and (min-width:1024px){
-            body{
-                background: linear-gradient(to bottom,
-            #ede7d9 13%,
-            #493521 13%)
-            }
-        #flores{
-            top: 300px;
-        }
-        #floresDois{
-            top: 300px;
-        }
+        .menu{
+            gap: 70px;
+        }  
         .titulo{
             margin: 30px 20px;
             padding: 30px;
@@ -437,18 +487,10 @@
             font-size: 20px;
             border-radius: 100px;
         }
-        #nuvens{
-            top: 580px;
-            left: 25px;
-        }
-        #nuvensDois{
-            top: 560px;
-            right: 25px;
-        }
         .blocoUm{
             margin: 60px;
             padding: 25px;
-            border-radius: 80px;
+            border-radius: 70px;
             font-size: large;
         }
         #professor {
@@ -469,35 +511,19 @@
 
 
          @media only screen and (min-width:1440px){
-            body{
-                background: linear-gradient(to bottom,
-            #ede7d9 15%,
-            #493521 15%)
-            }
-        #flores{
-            top: 400px;
-        }
-        #floresDois{
-            top: 400px;
-        }
+        .menu{
+            gap: 150px;
+        } 
         .titulo{
             margin: 30px 50px;
             padding: 30px;
             border: 2px solid white;
             font-size: 20px;
         }
-        #nuvens{
-            top: 740px;
-            left: 90px;
-        }
-        #nuvensDois{
-            top: 750px;
-            right: 100px;
-        }
         .blocoUm{
             margin: 80px;
             padding: 50px;
-            border-radius: 100px;
+            border-radius: 90px;
             font-size: larger;
         }
         #professor {
@@ -519,46 +545,20 @@
 
 
         @media only screen and (min-width:1920px){
-            body{
-                background: linear-gradient(to bottom,
-            #ede7d9 17%,
-            #493521 17%)
-            }
-             #flores{
-            top: 550px;
-        }
-        #floresDois{
-            top: 550px;
-        }
+            
         .titulo{
             margin: 50px 90px;
             padding: 50px;
             border: 2px solid white;
             font-size: 22px;
         }
-        #nuvens{
-            top: 970px;
-            left: 150px;
-        }
-        #nuvensDois{
-            top: 1000px;
-            right: 150px;
-        }
         }
 
 
         @media only screen and (min-width:2560px){
-            body{
-                background: linear-gradient(to bottom,
-            #ede7d9 17%,
-            #493521 17%)
-            }
-            #flores{
-            top: 700px;
-        }
-        #floresDois{
-            top: 700px;
-        }
+        .menu{
+            gap: 200px;
+        }     
         .titulo{
             margin: 50px 250px;
             padding: 50px;
@@ -566,18 +566,10 @@
             font-size: 35px;
             border-radius: 150px;
         }
-        #nuvens{
-            top: 1250px;
-            left: 250px;
-        }
-        #nuvensDois{
-            top: 1300px;
-            right: 300px;
-        }
         .blocoUm{
             margin:100px;
             padding: 70px;
-            border-radius: 150px;
+            border-radius: 140px;
             font-size: xx-large;
         }
         #professor {
