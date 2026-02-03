@@ -35,10 +35,9 @@ cadastro.forEach(buttons => {
         e.preventDefault();
         let modalId = buttons.getAttribute("data-modal")
         let modalCadastro = document.getElementById(modalId)
-    
-
-
-    modalLogin.close();
+        
+        let modalLogin = document.querySelector("dialog[open]")
+        if (modalLogin) modalLogin.close();
     modalCadastro.showModal();
     });
     
@@ -61,8 +60,10 @@ cadastrar.forEach(button => {
         e.preventDefault();
         let modalId = button.getAttribute("data-modal")
         let modalSucesso = document.getElementById(modalId)
-
         
+
+        let modalCadastro = document.querySelector("dialog[open]")
+        if (modalCadastro) modalCadastro.close();
         modalSucesso.showModal();
     })
 })
@@ -71,7 +72,9 @@ openLogin.forEach(buttons => {
     buttons.addEventListener("click", () => {
         let modalId = buttons.getAttribute("data-modal")
         let modalLogin = document.getElementById(modalId)
-
+        
+        let modalSucesso = document.querySelector("dialog[open]")
+        if(modalSucesso) modalSucesso.close()
     modalLogin.showModal();
 
     });
@@ -91,9 +94,15 @@ fecharSucesso.forEach(buttons => {
 
 function menuShow() {
     let menuCelular = document.querySelector(".menuCelular");
+    let menuIcone = document.querySelector(".menuIcone img");
+    let menuWrapper = document.querySelector(".menuIcone");
     if(menuCelular.classList.contains("open")){
         menuCelular.classList.remove("open")
+        menuWrapper.classList.remove("open")
+        document.querySelector(".icon").src = "img/menu.png"
     } else {
         menuCelular.classList.add("open")
+        menuWrapper.classList.add("open")
+        document.querySelector(".icon").src = "img/X.png"
     }
 }

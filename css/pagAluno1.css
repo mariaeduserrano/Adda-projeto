@@ -21,6 +21,9 @@
             bottom: 0px;
             z-index: 10;
         }
+
+
+        /* elementos ilustrados */
         #adda{
             position:absolute;
             bottom: 30px;
@@ -50,6 +53,8 @@
             z-index: 2;
             bottom: 50px;
         }
+
+        /*tabela*/
         .tabela{
             position: relative;
             background-color: rgb(255, 255, 255);
@@ -61,6 +66,14 @@
             gap: 40px;
             padding: 20px;
             top: 200px;
+        }
+        .tabela a{
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
         }
         #cadastro, #turma{
             background-color: rgb(88, 206, 137);
@@ -80,14 +93,6 @@
         }
         #turma{
             background-color: rgb(192, 149, 233);
-        }
-        a{
-            text-decoration: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s;
         }
         @media only screen and (min-width:325px){
             #adda{
