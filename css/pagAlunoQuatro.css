@@ -2,6 +2,8 @@
             margin: 0;
             padding: 0;
             background-color: rgb(237, 231, 217);
+            
+
         }
        
 
@@ -113,3 +115,70 @@
             display: table-row;
         }
 
+       @media only screen and (min-width: 375px){
+
+            .tabela{
+                width: 80%;
+                height: 400px; 
+                font-size: 30px;
+                left: 30px;
+                top: 150px;
+        }
+
+            .tabela-scroll{
+                max-height: 400px;
+            }
+
+            #sol{
+                width: 30%;
+            }
+
+            #adda{
+                width: 50%;
+            }
+       }
+
+      
+       @media only screen and (min-width: 768px){
+            
+            .tabela{
+                width: 60%;
+                height: 350px;
+                top: 230px;
+                font-size: 30px;
+                left: 40px;
+            }
+
+            .tabela-scroll{
+                max-height:350px ;
+            }
+
+            #adda{
+                width: 40%;
+                right:10px;
+            }
+        }
+
+        @media only screen and (min-width: 1024px){
+            .tabela{
+                top: 100px;
+        }
+
+             #adda{
+                width: 40%;
+             }
+
+             #sol{
+                width: 20%;
+             }
+        }
+
+        @media only screen and (min-width: 1440px){
+            #adda{
+                width:30%;
+            }
+
+            #sol{
+                width: 15%;
+            }
+        }

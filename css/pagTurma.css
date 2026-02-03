@@ -48,6 +48,14 @@ body {
             
         }
 
+        .tabela-scroll {
+            max-height: 300px;
+            overflow-y: auto;  
+            border: 1px solid rgb(0, 5, 53);
+            z-index: 4;
+           
+        }
+
          table {
             border-collapse: collapse;
             width: 100%;
@@ -95,4 +103,108 @@ body {
             position: absolute;
             right: 10px;
             top: 50px;
+        }
+
+         
+        @media only screen and (min-width: 375px){
+            #florzinha{
+                top: 710px;
+            }
+
+            #florzinhadois{
+                top: 710px;
+            }
+
+            .tabela{
+                width: 92%;
+                left: 15px;
+                height: 300px;
+                top: 150px;
+            }
+
+            .tabela-scroll{
+                max-height:300px ;
+            }
+
+            #sol{
+                width: 30%;
+            }
+
+            #adda{
+                width: 60%;
+            }
+        }
+
+           
+
+        @media only screen and (min-width: 480px){
+            .tabela{
+                top: 250px;
+                font-size: 25px;
+                height: 380px;
+            }
+
+            .tabela-scroll{
+                max-height: 380px;
+            }
+
+            #florzinha{
+                top: 880px;
+            }
+
+            #florzinhadois{
+                top: 880px;
+            }
+        }
+
+        @media only screen and (min-width: 768px){
+            #florzinha{
+                top: 78%;
+                width: 47%;
+            }
+
+            #florzinhadois{
+                top: 78%;
+                width: 47%;
+            }
+
+            .tabela{
+                font-size: 30px;
+                height: 310px;
+            }
+
+            .tabela-scroll{
+                max-height: 310px;
+            }
+        }
+
+        @media only screen and (min-width: 1024px){
+
+            #florzinha{
+                top: 450px;
+            }
+
+            #florzinhadois{
+                top: 450px;
+            }
+
+            #adda{
+                width: 30%;
+                right: 5%;
+            }
+
+            .tabela{
+                width: 65%;
+                top: 110px;
+                font-size: 25px;
+                height: 280px;
+            }
+
+            .tabela-scroll{
+                max-height: 280px;
+            }
+
+            #sol{
+                width: 20%;
+            }
         }
