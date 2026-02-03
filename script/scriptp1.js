@@ -86,3 +86,14 @@ fecharSucesso.forEach(buttons => {
     });
     
 });
+
+//menu responsivo
+
+function menuShow() {
+    let menuCelular = document.querySelector(".menuCelular");
+    if(menuCelular.classList.contains("open")){
+        menuCelular.classList.remove("open")
+    } else {
+        menuCelular.classList.add("open")
+    }
+}

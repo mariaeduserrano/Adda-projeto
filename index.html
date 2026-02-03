@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeira página</title>
+    <title>PÁGINA PRINCIPAL</title>
     <link rel="stylesheet" href="css/pag1.css">
 </head>
 <body>
@@ -20,24 +20,32 @@
         <a href="#contato">Contato</a>
        </nav>
 
+       <div class="login">
        <button class="fazerLogin" data-modal="modalLogin">
         Login
         </button>
         </div>
+        </div>
 
         <div class="menuIcone">
-            <button><img class=icon src="img/menu.png"></button>
+            <button onclick="menuShow()"><img class=icon src="img/menu.png"></button>
         </div>
 
         <div class="menuCelular">
+            <img src="img/addaTexto.png" alt="tipografia da logo do projeto adda" id="textoAddaMobile">
+
+            <nav class="menuCell">
             <a href="#home">Home</a>
             <a href="#sobre">Sobre nós</a>
             <a href="#comoFunciona">Como funciona o projeto</a>
             <a href="#contato">Contato</a>
+            </nav>
 
+            <div class="login">
             <button class="fazerLogin" data-modal="modalLogin">
         Login
         </button>
+        </div>
         </div>
     </header>
     <!-- modal para login -->
@@ -82,7 +90,7 @@
                 </div>
                 <!--botão de entrar na plataforma-->
                 <div class="botaoLogin">
-                    <a href="pagina-aluno1.html" class="entrar">Entrar</a>
+                    <a href="cadastro_de_alunos_e_turmas.html" class="entrar">Entrar</a>
                 </div>
             </form>
             
@@ -142,20 +150,34 @@
         </dialog>
 
         <!--elementos ilustrados-->
+            
+            <div class="topo">
+            <img src="img/addas.png" alt="Personagem adda junto com baloes de fala" id="adda"> 
+            
             <img src="gifs/florzinhas.gif" alt="florzinhas na grama lado esquerdo" id="flores">
             <img src="gifs/florzinhas.gif" alt="florzinhas na grama do lado direito" id="floresDois">
-            <img src="img/addas.png" alt="Personagem adda junto com baloes de fala" id="adda">  
+            </div>
             <img src="gifs/solzinho.gif" alt="Solzinho sorrindo animado" id="sol">
+
+
+
         <!--opções de usuario-->
         <div class="pran">
             <a href="pagina-download.html" id="aluno">Aluno</a>
-            <a href="pagina-professor1.html" id="professor">Professor</a>
+            <a type="button" class="openLogin" data-modal="modalLogin" id="professor">Professor</a>
         </div>
+
+
         <!-- Sobre o projeto -->
-         <p class="titulo">Aprender pode (e deve) ser divertido.
-            O ADDA é um projeto educacional <br>que apoia a alfabetização de alunos do 6º ano por meio de jogos, <br>aulas interativas e acompanhamento pedagógico.</p>
+         <div class="nuvensContainer">
             <img src="gifs/nuvensDois.gif" alt="nuvens brancas esquerda" id="nuvens">
             <img src="gifs/nuvensDois.gif" alt="nuvens brancas direita" id="nuvensDois">
+
+         <p class="titulo">Aprender pode (e deve) ser divertido.
+            O ADDA é um projeto educacional <br>que apoia a alfabetização de alunos do 6º ano por meio de jogos, <br>aulas interativas e acompanhamento pedagógico.</p>
+        </div>
+
+
         <div class="blocoUm">
             <a id="sobre"></a>
             <img src="img/titulo.png" alt="quem nos somos" class="TituloG">
@@ -202,51 +224,50 @@
             <p>📧 Atendimento online via redes sociais</p>
             <p>Formulário para contato:</p>
             <hr>
-            <div>
-                <form action="" method="post" name="">
-                <p>
-                    <label for="Nome">Nome:</label>
-                </p>
-                <P>
+            <div class="formulário">
+                <form action="" method="post" name="form">
+                <div class="contato">
+                    <label for="Nome">
+                        Nome:
+                    </label>
                     <input type="text" id="nome" name="Nome" placeholder="Nome completo">
-                </p>
-            
-                <p>
-                    <label for="email">E-mail:</label>
-                </p>
-                <p>
+                
+                
+                    <label for="email">
+                        E-mail:
+                    </label>
                     <input type="text" id="email" name="Email" placeholder="E-mail" required>
-                </p>
-                <p>
-                    <label for="Telefone">Telefone/whatsApp:</label>
-                </p>
-                <p>
+
+
+                    <label for="Telefone">
+                        Telefone/whatsApp:
+                    </label>
                     <input type="text" id="Telefone" name="telefone" placeholder="(00) 00 000000000" required>
-                </p>
-                <p>
-                    <label for="idade">Qual é a sua idade?</label>
-                </p>
-                <p>
+                
+                    
+                    <label for="idade">
+                        Qual é a sua idade?
+                    </label>
                     <input type="number" id="idade" name="Idade" placeholder="00">
-                </p>
-                <p>
-                    <label for="Assunto">Assunto:</label>
-                </p>
-                <p>
+                
+                
+                    <label for="Assunto">
+                        Assunto:
+                    </label>
                     <select name="assunto" id="assunto">
                         <option value="Duvida">Duvidas</option>
                         <option value="Elogios">Elogios</option>
                         <option value="Reclamação">Reclamações</option>
                         <option value="Outros">Outros</option>
                     </select>
-                </p>
-                <p>
-                    <label for="mensagem">Mensagem:</label>
-                </p>
-                <p>
+                
+                
+                    <label for="mensagem">
+                        Mensagem:
+                    </label>
                     <textarea name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Digite sua mensagm aqui!"></textarea>
-                </p>
-                <button type="submit">Enviar</button>
+                </div>
+                <button type="submit" class="enviarForm">Enviar</button>
                 </form>
             </div>
         </div>
