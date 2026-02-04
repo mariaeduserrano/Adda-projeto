@@ -4,21 +4,52 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pagina professor 3</title>
-        <link rel="stylesheet" href="css/pagAluno1.css">
+        <link rel="stylesheet" href="css/pagPerfilProf.css">
     </head>
     <body>
-        <header><img src="img/addaTexto.png" alt="tipografia da logo do projeto adda" id="textoAdda"></header>
+        <header class="topinho">
+        <div class="menuPc">
+        <a href="index.html">
+            <img src="img/addaTexto.png" alt="tipografia da logo do projeto adda" id="textoAdda">
+        </a>
+
+       <nav class="menu">
+        <a href="tabela_de_alunos.html">Alunos</a>
+        <a href="turmas.html">Turmas</a>
+        <a href="cadastrar_aluno.html">Cadastrar Aluno</a>
+        <a href="cadastro_de_alunos_e_turmas.html">Perfil do Professor</a>
+       </nav>
+
+        </div>
+
+        <div class="menuIcone">
+            <button onclick="menuShow()"><img class=icon src="img/menu.png"></button>
+        </div>
+
+        <div class="menuCelular">
+            
+
+            <nav class="menuCell">
+            <a href="tabela_de_alunos.html">Alunos</a>
+            <a href="turmas.html">Turmas</a>
+            <a href="cadastrar_aluno.html">Cadastrar Aluno</a>
+            <a href="cadastro_de_alunos_e_turmas.html">Perfil do Professor</a>
+            </nav>
+
+        </div>
+    </header>
                 <img src="img/AddaPNG.png" alt="adda" id="adda">
                 <img src="gifs/solzinho.gif" alt="sol feliz" id="solzinho">
                 <div class="tabela">
-                    <a href="pagina-aluno2.html" id="cadastro">Cadastrar Aluno</a>
-                    <a href="pagina-aluno4.html" id="turma">Turmas</a>
+                    <a href="cadastrar_aluno.html" id="cadastro">Cadastrar Aluno</a>
+                    <a href="turmas.html" id="turma">Turmas</a>
                 </div>
                 <img src="gifs/florzinhas.gif" alt="flores coloridas de roxo, rosa e branco" id="flores">
                 <img src="gifs/florzinhas.gif" alt="flores coloridas de roxo, rosa e branco" id="flores2">
                 <img src="img/graminha.png" alt="grama ilustrada" id="graminha">
 
         <footer></footer>
+        <script src="script/menuresp.js"></script>
     </body>
         
 </html>
