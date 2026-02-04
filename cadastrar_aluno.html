@@ -4,14 +4,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pagina professor 3</title>
-        <link rel="stylesheet" href="css/pagAlunoDois.css">
+        <link rel="stylesheet" href="css/pagCadastroAluno.css">
     </head>
     <body>
-        <header>
-            <a href="index.html" class="logo">
-                <img src="img/addaTexto.png" alt="tipografia da logo do projeto adda" id="textoAdda">
-            </a>
-        </header>
+        <header class="topinho">
+        <div class="menuPc">
+        <a href="index.html">
+            <img src="img/addaTexto.png" alt="tipografia da logo do projeto adda" id="textoAdda">
+        </a>
+
+       <nav class="menu">
+        <a href="tabela_de_alunos.html">Alunos</a>
+        <a href="turmas.html">Turmas</a>
+        <a href="cadastrar_aluno.html">Cadastrar Aluno</a>
+        <a href="cadastro_de_alunos_e_turmas.html">Perfil do Professor</a>
+       </nav>
+
+        </div>
+
+        <div class="menuIcone">
+            <button onclick="menuShow()"><img class=icon src="img/menu.png"></button>
+        </div>
+
+        <div class="menuCelular">
+            
+
+            <nav class="menuCell">
+            <a href="tabela_de_alunos.html">Alunos</a>
+            <a href="turmas.html">Turmas</a>
+            <a href="cadastrar_aluno.html">Cadastrar Aluno</a>
+            <a href="cadastro_de_alunos_e_turmas.html">Perfil do Professor</a>
+            </nav>
+
+        </div>
+    </header>
+
         <div class="tabela">
             <form id="Cadastrando">
                 <input id="Aluno" type="text" placeholder="Nome completo do aluno">
@@ -20,20 +47,24 @@
                 <input id="Data-de-nascimento" type="date" placeholder="Data de nascimento">
                 <input id="senha" type="password" placeholder="Senha">
             </form>
-            <button class="open-modal" data-modal="modal-1" id="cadastrar">Cadastrar</button>
+            <button class="modalAluno" data-modal="modalSucess" id="cadastrar">
+                Cadastrar
+            </button>
         </div>
-        <dialog id="modal-1">
-            <button class="close-modal" data-modal="modal-1" type="button" id="x">
-                x
+        <dialog id="modalSucess">
+            <button class="fecharOModal" data-modal="modalSucess" type="button" id="x">
+                X
             </button>
             <h2>Aluno cadastrado com sucesso!</h2>
+            <a href="cadastrar_aluno.html">Cadastrar outro aluno</a>
         </dialog>
 
         <img src="img/AddaPNG.png" alt="pranchetinha" id="adda">
         <img src="gifs/florzinhas.gif" alt="flores coloridas de roxo, rosa e branco" id="flores">
         <img src="gifs/florzinhas.gif" alt="flores coloridas de roxo, rosa e branco" id="flores2">
         <img src="img/graminha.png" alt="grama ilustrada" id="graminha">
+        <img src="gifs/solzinho.gif" alt="solzinho feliz animado" id="solzinho">
         <footer></footer>
-        <script src="script/script.js"></script>
+        <script src="script/modalCadastroAluno.js"></script>
     </body>
 </html>
