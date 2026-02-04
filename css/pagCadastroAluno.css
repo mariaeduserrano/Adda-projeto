@@ -158,12 +158,6 @@
             bottom: 30px;
             z-index: 1;
         }
-        #solzinho{
-            width: 15%;
-            position: absolute;
-            right: 10px;
-            top: 70px;
-        }
         #graminha{
             width: 100%;
             position: absolute;
@@ -265,7 +259,7 @@
             }
             .tabela{
                 left: 15px;
-                top: 50px;
+                top: 30px;
             }
         }
         @media only screen and (min-width:425px){
