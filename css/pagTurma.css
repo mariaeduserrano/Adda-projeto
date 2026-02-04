@@ -18,24 +18,18 @@ body {
             position:fixed;
             bottom: 0px;
             margin-top: 194%;
+            
         }
 
           #textoAdda{
             width: 100px;
         }
 
-         #adda{
-            width: 30%;
-            position: absolute;
-            z-index: 1;
-            bottom: 40px;
-            right: 20%;
-        }
-
+         
+        /*tabela*/
         .tabela {
-            position:relative ;
+            position:relative;
             width: 40%;
-            height: 300px;
             border-collapse: collapse;
             text-align: center;
             background-color: white;
@@ -43,8 +37,6 @@ body {
             border-color: rgb(0,05,53);
             border-radius: 10px;
             font-size: 20px;
-            left: 150px;
-            top: 90px;
             
         }
 
@@ -73,10 +65,17 @@ body {
             color: white;
         }
 
+
+        /*elementos ilustrados*/
+        #adda{
+            position: absolute;
+            z-index: 1;
+            bottom: 30px;
+        }
         #graminha{
             width: 100%;
             position: absolute;
-            bottom: 50px;
+            bottom: 45px;
             z-index: 0;
         }
 
@@ -86,7 +85,6 @@ body {
             position: absolute;
             z-index: 1;
             bottom: 50px;
-            top: 290px;
         }
 
         #florzinhadois{
@@ -95,7 +93,6 @@ body {
             right: 20px;
             z-index: 1;
             bottom: 50px;
-            top: 290px;
         }
 
         #sol{
@@ -105,106 +102,56 @@ body {
             top: 50px;
         }
 
+        
          
-        @media only screen and (min-width: 375px){
-            #florzinha{
-                top: 710px;
-            }
-
-            #florzinhadois{
-                top: 710px;
-            }
-
+        @media only screen and (max-width: 325px){
             .tabela{
-                width: 92%;
-                left: 15px;
-                height: 300px;
-                top: 150px;
+                width: 90%;
+                left: 50px;
+                top: 50px;
             }
-
             .tabela-scroll{
-                max-height:300px ;
+                max-height: 90%;
             }
-
-            #sol{
-                width: 30%;
-            }
-
             #adda{
-                width: 60%;
-            }
-        }
-
-           
-
-        @media only screen and (min-width: 480px){
-            .tabela{
-                top: 250px;
-                font-size: 25px;
-                height: 380px;
-            }
-
-            .tabela-scroll{
-                max-height: 380px;
-            }
-
-            #florzinha{
-                top: 880px;
-            }
-
-            #florzinhadois{
-                top: 880px;
+            width: 70%;
+            left: 20%;
             }
         }
 
         @media only screen and (min-width: 768px){
-            #florzinha{
-                top: 78%;
-                width: 47%;
-            }
-
-            #florzinhadois{
-                top: 78%;
-                width: 47%;
-            }
 
             .tabela{
                 font-size: 30px;
-                height: 310px;
+                width: 80%;
+                top: 200px;
             }
 
             .tabela-scroll{
-                max-height: 310px;
+                max-height: 80%;
             }
+            #adda{
+            width: 50%;
+            left: 25%;
+            }
+
         }
 
         @media only screen and (min-width: 1024px){
 
-            #florzinha{
-                top: 450px;
-            }
-
-            #florzinhadois{
-                top: 450px;
-            }
+            
 
             #adda{
                 width: 30%;
-                right: 5%;
+                left: 35%
             }
 
             .tabela{
                 width: 65%;
                 top: 110px;
                 font-size: 25px;
-                height: 280px;
             }
-
             .tabela-scroll{
                 max-height: 280px;
-            }
-
-            #sol{
-                width: 20%;
             }
         }
