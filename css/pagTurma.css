@@ -37,7 +37,6 @@ body {
             border-color: rgb(0,05,53);
             border-radius: 10px;
             font-size: 20px;
-            
         }
 
         .tabela-scroll {
@@ -104,54 +103,40 @@ body {
 
         
          
-        @media only screen and (max-width: 325px){
+        @media only screen and (min-width: 325px){
             .tabela{
                 width: 90%;
-                left: 50px;
                 top: 50px;
-            }
-            .tabela-scroll{
-                max-height: 90%;
+                left: 100px;
             }
             #adda{
-            width: 70%;
+            width: 50%;
             left: 20%;
             }
         }
 
         @media only screen and (min-width: 768px){
-
             .tabela{
                 font-size: 30px;
                 width: 80%;
                 top: 200px;
-            }
-
-            .tabela-scroll{
-                max-height: 80%;
+                left: 100px;
             }
             #adda{
-            width: 50%;
+            width: 40%;
             left: 25%;
             }
-
         }
 
         @media only screen and (min-width: 1024px){
-
-            
-
-            #adda{
-                width: 30%;
-                left: 35%
-            }
-
             .tabela{
                 width: 65%;
                 top: 110px;
                 font-size: 25px;
+                left: 50px;
             }
-            .tabela-scroll{
-                max-height: 280px;
+            #adda{
+                width: 50%;
+                left: 35%
             }
         }

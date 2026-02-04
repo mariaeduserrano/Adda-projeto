@@ -187,7 +187,7 @@
             width: 300px;
             gap: 40px;
             padding: 20px;
-            top: 150px;
+            top: 100px;
         }
         .tabela a{
             text-decoration: none;
@@ -197,7 +197,7 @@
             justify-content: center;
             transition: background-color 0.3s;
         }
-        #cadastro, #turma{
+        #cadastro, #turma, #alunos{
             background-color: rgb(88, 206, 137);
             position: relative;
             color: white;
@@ -215,6 +215,12 @@
         }
         #turma{
             background-color: rgb(192, 149, 233);
+        }
+        #alunos{
+            background-color: pink;
+        }
+        #alunos:hover{
+            background-color: rgb(163, 96, 107);
         }
         @media only screen and (min-width:325px){
             #adda{

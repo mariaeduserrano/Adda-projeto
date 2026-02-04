@@ -21,6 +21,7 @@
             bottom: 0px;
             z-index: 10;
         }
+        /*elementos ilustrados*/
         #sol{
             width: 15%;
             position: absolute;
@@ -52,6 +53,8 @@
             bottom: 25px;
             z-index: 1;
        }
+
+       /*responsivo*/
        @media only screen and (min-width:325px){
             #adda{
             width: 70%;
